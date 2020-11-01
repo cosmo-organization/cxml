@@ -14,5 +14,7 @@ void renattrib(struct node* _node,const char* key,const char* newkey);
 void removeattrib(struct node* _node,const char* key);
 struct attrib* createattrib(const char* key,const char* value);
 const char* attribval(struct node* _node,const char* key);
-
+const char* nodeclass(struct node* _node);
+const char* nodeid(struct node* _node);
+const char* nodename(struct node* _node);
 #endif

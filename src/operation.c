@@ -98,3 +98,12 @@ void removeattrib(struct node* _node,const char* key){
 		temp=temp->next;
 	}
 }
+const char* nodeclass(struct node* _node){
+	return attribval(_node,"class");
+}
+const char* nodeid(struct node* _node){
+	return attribval(_node,"id");
+}
+const char* nodename(struct node* _node){
+	return attribval(_node,"name");
+}

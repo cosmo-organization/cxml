@@ -91,6 +91,7 @@ void removeattrib(struct node* _node,const char* key){
 		if (strcmp(temp->key,key)==0){
 			prev->next=temp->next;
 			free(temp);
+			_node->nattrib--;
 			break;
 		}
 		prev=temp;

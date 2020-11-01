@@ -9,8 +9,10 @@ void appendnode(struct node* child);
 struct node* childat(struct node* parent,int index);
 struct node* firstchild(struct node* parent);
 struct node* lastchild(struct node* parent);
-void attribval(struct node* _node,struct attrib _attrib);//also in maintainance
+void setattrib(struct node* _node,struct attrib* _attrib);//also in maintainance
 void renattrib(struct node* _node,const char* key,const char* newkey);//some modification required
 void removeattrib(struct node* _node,const char* key);//pending
+struct attrib* createattrib(const char* key,const char* value);
+const char* attribval(struct node* _node,const char* key);
 
 #endif

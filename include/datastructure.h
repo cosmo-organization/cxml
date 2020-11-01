@@ -1,10 +1,9 @@
 #ifndef DATASTRUCTURE_H
 #define DATASTRUCTURE_H
 struct attrib{
-	struct attrib* from;
+	struct attrib* next;
 	char* key;
 	char* value;
-	struct attrib* to;
 };
 struct node{
 	struct node* parent;

@@ -17,4 +17,7 @@ const char* attribval(struct node* _node,const char* key);
 const char* nodeclass(struct node* _node);
 const char* nodeid(struct node* _node);
 const char* nodename(struct node* _node);
+struct node* copyN(struct node* _node);
+struct attrib* copyA(struct attrib* _attrib);
+void appendNode(struct node* parent,struct node* _node);
 #endif

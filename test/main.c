@@ -9,12 +9,15 @@ int main(int nargs, char** argvals) {
 	setattrib(body,createattrib("bgcolor","blue"));
 	setattrib(body,createattrib("bg","test"));
 	setattrib(body,createattrib("tx","100001"));
+	setattrib(body,createattrib("tc","4555"));
 	removeattrib(body,"bg");
 	removeattrib(body,"bgcolor");
+	removeattrib(body,"tc");
+	setattrib(body,createattrib("tx","Hello"));
 //	removeattrib(body,"tx");
 	printf("%s\n",attribval(body,"tx"));
-	printf("%s\n",attribval(body,"bg"));
+	printf("%s\n",attribval(body,"tc"));
 	printf("%s\n",attribval(body,"bgcolor"));
-	deletenode(root);
+//	deletenode(root);
 	return 0;
 }

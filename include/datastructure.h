@@ -7,8 +7,9 @@ struct attrib{
 };
 struct node{
 	struct node* parent;
-	struct node** childs;
+	struct node* child;
 	unsigned int nchild;
+	struct node* next;
 	struct attrib* attribs;
 	unsigned int nattrib;
 	char* tag;
